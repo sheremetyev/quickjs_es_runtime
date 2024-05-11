@@ -13,7 +13,7 @@ readme = "README.md"
 categories = ["development-tools"]
 
 [features]
-default = ["console", "setimmediate", "setinterval", "settimeout", "typescript", "bellard"]
+default = ["console", "setimmediate", "setinterval", "settimeout", "typescript", "quickjs-ng"]
 tokio_full = ["tokio/full"]
 console = []
 settimeout = []
@@ -30,9 +30,9 @@ hirofa_utils = "0.7"
 #hirofa_utils = {git="https://github.com/HiRoFa/utils"}
 backtrace = "0.3.67"
 
-#libquickjs-sys = {package="hirofa-quickjs-sys", git='https://github.com/HiRoFa/quickjs-sys'}
+libquickjs-sys = {package="hirofa-quickjs-sys", git='https://github.com/sheremetyev/quickjs-sys.git', branch='fix-windows'}
 #libquickjs-sys = {package="hirofa-quickjs-sys", path='../quickjs-sys'}
-libquickjs-sys = {package="hirofa-quickjs-sys", version="0.4.0", default-features=false}
+#libquickjs-sys = {package="hirofa-quickjs-sys", version="0.4.0", default-features=false}
 lazy_static = "1.4.0"
 log = "0.4"
 num_cpus = "1"
